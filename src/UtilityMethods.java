@@ -7,6 +7,18 @@ public class UtilityMethods {
     // Methods should be declared as static for directed use
     // Intended to be called without an instance of the class
 
+    public static String systemCheck() {
+        String osName = System.getProperty("os.name").toLowerCase();
+        if (osName.contains("mac")) {
+            System.out.println("Operating System: Mac");
+        } else if (osName.contains("windows")) {
+            System.out.println("Operating System: Windows");
+        } else {
+            System.out.println("Operating System: Unknown");
+        }
+        return osName;
+    }
+
     public static ArrayList<String> getFilenames(String directoryPath) {
         File directory = new File(directoryPath);
         ArrayList<String> filenames = new ArrayList<>();
@@ -39,5 +51,9 @@ public class UtilityMethods {
         } catch (Exception e) {
             System.err.println("Error clearing console: " + e.getMessage());
         }
+    }
+
+    public static void main(String[] args) {
+        String mySystem = systemCheck();
     }
 }

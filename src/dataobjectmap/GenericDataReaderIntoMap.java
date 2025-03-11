@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -14,7 +15,8 @@ public class GenericDataReaderIntoMap {
 
     public GenericDataReaderIntoMap(String fileName) {
         // Step 1: Define the map
-        Map<String, String> testKeyValuePairs = new HashMap<>();
+        //Map<String, String> testKeyValuePairs = new HashMap<>();
+        Map<String, String> testKeyValuePairs = new TreeMap<>();
         // Step 2: read the CSV file data into the map
         String line;
         String csvSplitBy = ",";

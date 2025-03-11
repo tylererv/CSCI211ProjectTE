@@ -10,13 +10,14 @@ public class CSCI211Menus {
         CSCI211MenuItemList = new ArrayList<CSCI211MenuItem>();
         //String[5] csvFile;
         // Read the filenames in the directory
-        String directoryPrefix = "DataFiles/ConfigurationCSVFiles";
+        String directoryPrefix = "DataFiles" + "/" + "ConfigurationCSVFiles";
         ArrayList<String> fileNamesList = new ArrayList<>();
         fileNamesList = UtilityMethods.getFilenames(directoryPrefix);
         //String csvFile;
         for (String newCsvFile : fileNamesList) {
             //System.out.println(newCsvFile);
-            String csvFile = directoryPrefix + "\\" + newCsvFile;
+            String csvFile = directoryPrefix + "/" + newCsvFile;
+            //System.out.println(csvFile);
                     //"DataFiles/ConfigurationCSVFiles/ProjectComponentSpreadsheet.csv"; // Path to CSV file
             String line;
             String csvSplitBy = ",";

@@ -16,6 +16,4 @@ public class CityAndPopulationLookup extends GenericDataReaderIntoMap {
     public static void main(String[] args) {
         test();
     }
-
-
 }
