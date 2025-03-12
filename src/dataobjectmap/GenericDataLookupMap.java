@@ -8,9 +8,7 @@ public class GenericDataLookupMap extends GenericDataReaderIntoMap {
     }
 
     public static void test() {
-        //String fileName = "DataFiles/CityAndPopulation.csv";
-        GenericDataLookupMap objLookup;
-        objLookup = new GenericDataLookupMap();
+        GenericDataLookupMap objLookup = new GenericDataLookupMap();
         objLookup.keyValueLookup();
     }
 
