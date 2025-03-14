@@ -40,6 +40,7 @@ public class GenericDataReaderIntoMap {
                         String keyInput = data[0].trim();
                         String valueInput = data[1].trim();
                         //System.out.println("Insert now");
+                        // Resolve issue of multiple values with the same key here
                         testKeyValuePairs.put(keyInput,
                                 valueInput);
                     }
